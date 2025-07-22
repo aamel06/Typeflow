@@ -1,0 +1,222 @@
+body{
+    background: #e0fff4;
+    background: linear-gradient(180deg,rgba(224, 255, 244, 1) 1%, rgba(56, 179, 255, 1) 100%);
+}
+
+.landingPage{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.highlighted{
+    color: rgb(0, 145, 255);
+    font-style: italic;
+}
+
+.landingPage h1{
+    margin-top: 80px;
+    font-family: Outfit, sans-serif;
+    font-size: 5rem;
+    line-height: 0.1em;
+    user-select: none;
+}
+
+.landingPage h2{
+    font-family: Outfit, sans-serif;
+    font-size: 1.5rem;
+    user-select: none;
+
+}
+
+.modes{
+    padding-top: 80px;
+    font-family: Outfit, sans-serif;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 0.75rem rgb(117, 195, 255));
+}   
+    
+
+.modes .classic, .modes .quickfire{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 1rem;
+    width: 80%;
+    margin-right: 40px;
+    transition: transform 0.5s ease;
+    text-align: center;
+
+}
+
+
+.modes p{
+    padding: 0px 10px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.modes .classic:hover, .modes .quickfire:hover{
+    transform:scale(1.1);
+}
+
+.modes a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 109, 255);
+    padding: 10px;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: end;
+}
+
+.modes a:hover{
+    background-color: rgb(39, 82, 201);
+
+}
+
+.qtitle{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.qtitle h1{
+    margin-top: 80px;
+    font-family: Outfit, sans-serif;
+    font-size: 4rem;
+    line-height: 0.1em;
+    user-select: none;
+    margin-bottom: 10%;
+}
+
+.qcontainer{
+    position: absolute;
+    left: 25%;
+    margin: 0 auto;
+    font-family: Outfit, sans-serif;
+    filter: drop-shadow(0 0 0.75rem rgb(117, 195, 255));
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 1rem;
+    width: 50%;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+
+
+
+.qcontainer h3{
+    font-size: 1.8rem;
+}
+
+.qcontainer input{
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    resize: none;
+    text-align: center;
+}
+
+.qcontainer .stats{
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.qcontainer .gameButtons button{
+    font-family: Outfit, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 109, 255);
+    padding: 5px 60px;
+    border-radius: 1rem;
+    border: none;
+    transition: transform 0.5s ease;
+    margin-left: 5px;
+
+}
+
+.qcontainer .gameButtons button:hover{
+    background-color: rgb(39, 82, 201);
+    transform: scale(1.05);
+
+}
+
+.qcontainer .gameButtons button:disabled{
+    background-color: rgb(119, 150, 237);
+}
+
+.qcontainer .settingsButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #e0fff400;
+    border: none;
+}
+
+.qcontainer .settingsButton img{
+    max-width: 40px;
+    transition: transform 1s ease;
+}
+
+.qcontainer .settingsButton img:hover{
+    transform: scale(1.2);
+}
+
+.settings{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 18%;
+    /* margin: 0 auto; */
+    text-align: center;
+    display: none;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0 0.75rem rgb(117, 195, 255));
+    transition: transform 1s ease;
+
+}
+
+.settings .closeButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #e0fff400;
+    border: none;
+}
+
+.settings .closeButton img{
+    max-width: 30px;
+   transition: transform 1s ease;
+}
+
+.settings .closeButton img:hover{
+    transform: scale(1.2);
+}
+
+.settings h4{
+    font-family: Outfit, sans-serif;
+    font-size: 1.5rem;
+}
+
+.settings label, .settings select{
+    font-family: Outfit, sans-serif;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 145, 255);
+    margin-right: 10px;
+    
+}
+
+.settings .settingOptions{
+    text-align: left;
+    margin-left: 10%;
+    align-items: center;
+}
+
+
