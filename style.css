@@ -1,6 +1,7 @@
 body{
-    background: #e0fff4;
-    background: linear-gradient(180deg,rgba(224, 255, 244, 1) 1%, rgba(56, 179, 255, 1) 100%);
+    /* background: #e0fff4; */
+    /* background: linear-gradient(180deg,rgba(224, 255, 244, 1) 1%, rgba(56, 179, 255, 1) 100%); */
+    background: #222831;
 }
 
 .landingPage{
@@ -9,11 +10,12 @@ body{
 }
 
 .highlighted{
-    color: rgb(0, 145, 255);
+    color: #7dbabd;
     font-style: italic;
 }
 
 .landingPage h1{
+    color: #EEEEEE;
     margin-top: 80px;
     font-family: Outfit, sans-serif;
     font-size: 5rem;
@@ -22,9 +24,11 @@ body{
 }
 
 .landingPage h2{
+    color: #EEEEEE;
     font-family: Outfit, sans-serif;
     font-size: 1.5rem;
     user-select: none;
+    font-weight: 400;
 
 }
 
@@ -34,24 +38,31 @@ body{
     display: flex;
     width: 80%;
     margin: 0 auto;
-    filter: drop-shadow(0 0 0.75rem rgb(117, 195, 255));
+    filter: drop-shadow(0 0 -0.75rem #12151a);
+    gap: 10%;
 }   
     
 
 .modes .classic, .modes .quickfire{
-    background-color: rgb(255, 255, 255);
+    background-color: #31363F;
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 1rem;
-    width: 80%;
+    width: 70%;
     margin-right: 40px;
     transition: transform 0.5s ease;
     text-align: center;
+    margin: 0 auto;
+}
 
+.modes h3{
+    font-weight: 500;
+    color: #EEEEEE;
 }
 
 
 .modes p{
+    color: #EEEEEE;
     padding: 0px 10px;
     padding-bottom: 20px;
     text-align: justify;
@@ -62,16 +73,16 @@ body{
 }
 
 .modes a{
-    color: rgb(255, 255, 255);
-    background-color: rgb(56, 109, 255);
-    padding: 10px;
+    color: #222831;
+    background-color: #76ABAE;
+    padding: 10px 20px;
     border-radius: 2rem;
     text-decoration: none;
     text-align: end;
 }
 
 .modes a:hover{
-    background-color: rgb(39, 82, 201);
+    background-color: #638e90;
 
 }
 
@@ -82,12 +93,13 @@ body{
 
 
 .qtitle h1{
+    color: #EEEEEE;
     margin-top: 80px;
     font-family: Outfit, sans-serif;
     font-size: 4rem;
     line-height: 0.1em;
     user-select: none;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .qcontainer{
@@ -95,8 +107,7 @@ body{
     left: 25%;
     margin: 0 auto;
     font-family: Outfit, sans-serif;
-    filter: drop-shadow(0 0 0.75rem rgb(117, 195, 255));
-    background-color: rgb(255, 255, 255);
+    background-color: #31363F;
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 1rem;
@@ -108,7 +119,12 @@ body{
 
 
 .qcontainer h3{
+    color: #EEEEEE;
     font-size: 1.8rem;
+}
+
+.qcontainer p{
+    color: #EEEEEE;
 }
 
 .qcontainer input{
@@ -117,6 +133,14 @@ body{
     padding: 10px 10px;
     resize: none;
     text-align: center;
+    background-color: #222831;
+    border-width: 0;
+    font-family: Outfit, sans-serif;
+    color: #EEEEEE;
+}
+
+.qcontainer input:focus{
+    outline: 1px #76ABAE;
 }
 
 .qcontainer .stats{
@@ -127,8 +151,8 @@ body{
 .qcontainer .gameButtons button{
     font-family: Outfit, sans-serif;
     font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    background-color: rgb(56, 109, 255);
+    color: #222831;
+    background-color: #76ABAE;;
     padding: 5px 60px;
     border-radius: 1rem;
     border: none;
@@ -137,14 +161,14 @@ body{
 
 }
 
-.qcontainer .gameButtons button:hover{
-    background-color: rgb(39, 82, 201);
+.qcontainer .gameButtons button:enabled:hover{
+    background-color: #638e90;
     transform: scale(1.05);
 
 }
 
 .qcontainer .gameButtons button:disabled{
-    background-color: rgb(119, 150, 237);
+    background-color: #6b7d7e;
 }
 
 .qcontainer .settingsButton{
@@ -152,31 +176,33 @@ body{
     top: 0;
     right: 0;
     padding: 20px;
-    background-color: #e0fff400;
-    border: none;
+    background-color: transparent;
+    border: 0;
 }
 
 .qcontainer .settingsButton img{
     max-width: 40px;
     transition: transform 1s ease;
+    background-color: #76ABAE;
 }
 
 .qcontainer .settingsButton img:hover{
-    transform: scale(1.2);
+    background-color: #638e90;
+
 }
 
+
+
 .settings{
-    background-color: white;
+    background-color: #31363F;
     position: absolute;
     width: 60%;
     height: 60%;
     left: 20%;
     top: 18%;
-    /* margin: 0 auto; */
     text-align: center;
     display: none;
     border-radius: 1rem;
-    filter: drop-shadow(0 0 0.75rem rgb(117, 195, 255));
     transition: transform 1s ease;
 
 }
@@ -193,13 +219,17 @@ body{
 .settings .closeButton img{
     max-width: 30px;
    transition: transform 1s ease;
+    background-color: #76ABAE;
+
 }
 
 .settings .closeButton img:hover{
-    transform: scale(1.2);
+       background-color: #638e90;
+
 }
 
 .settings h4{
+    color: #EEEEEE;
     font-family: Outfit, sans-serif;
     font-size: 1.5rem;
 }
@@ -207,10 +237,18 @@ body{
 .settings label, .settings select{
     font-family: Outfit, sans-serif;
     font-size: 1rem;
-    border-radius: 0.5rem;
-    border-color: rgb(0, 145, 255);
-    margin-right: 10px;
+    color: #EEEEEE;
     
+}
+
+.settings select{
+    border-radius: 0.5rem;
+    border-width: 0;
+    margin-left: 10px;
+    background-color: #222831;
+    text-align: center;
+    outline: #76ABAE;
+    padding: 5px;
 }
 
 .settings .settingOptions{
@@ -219,4 +257,72 @@ body{
     align-items: center;
 }
 
+.ccontainer{
+    position: absolute;
+    left: 25%;
+    margin: 0 auto;
+    font-family: Outfit, sans-serif;
+    background-color: #31363F;
+    color: #EEEEEE;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 1rem;
+    width: 50%;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+
+.ccontainer #quote{
+    color:#434d60;
+    background-color: #222831;
+    border-radius: 1rem;
+    padding: 15px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.ccontainer #start-test, .ccontainer #stop-test{
+    font-family: Outfit, sans-serif;
+    font-size: 1.2rem;
+    color: #222831;
+    background-color: #76ABAE;;
+    padding: 5px 40px;
+    border-radius: 1rem;
+    border: none;
+    transition: transform 0.5s ease;
+    margin-top: 20px;
+}
+
+.ccontainer textarea{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    opacity: 0;
+}
+
+.ccontainer .result{
+    display: none;
+}
+
+.ccontainer p{
+    color: #EEEEEE;
+}
+
+.incorrect .currentChar, .currentChar{
+    background-color: #3b5762;
+    color: #76ABAE;
+}
+
+.correct {
+    color: #EEEEEE;
+}
+
+.incorrect {
+    color: rgb(215, 67, 67);
+}
 

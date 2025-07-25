@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="qtitle">
+            <h1>Clas<span style="color: #7dbabd;">sic!</span></h1>
+        </div>
+        <div class="ccontainer">
+            <div
+                id="quote"
+                onmousedown="return false"
+                onselectstart="return false"
+            ></div>
+            <textarea id="quote-input"></textarea>
+            <button id="stop-test" onclick="displayResult()">Stop</button>
+            <div class="stats">
+                <p>Time: <span id="timer">0</span>s</p>
+                <p>Mistakes: <span id="mistakes">0</span></p>
+            </div>
+            <div class="result" id="result">
+                    <h3>Result</h3>
+                <div class="wrapper">
+                    <p>Accuracy: <span id="accuracy"></span>%</p>
+                    <p>WPM: <span id="wpm"></span></p>
+                </div>
+            </div>
+        </div>
+    <script src="classicscript.js"></script>
+    </body>
+</html>
