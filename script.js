@@ -2,7 +2,7 @@ const startButton = document.getElementById("start");
 const resetButton = document.getElementById("reset");
 const settingsButton = document.getElementById("settingsButton");
 const timerElement = document.getElementById("timer");
-const scoreElement = document.getElementById("score");
+const wpmElement = document.getElementById("wpm");
 const userInput = document.getElementById("word-input");
 const wordText = document.getElementById("word");
 const settingsElement = document.getElementById("settings");
@@ -15,7 +15,6 @@ const requireDiacriticsElement = document.getElementById("requireDiacritics");
 
 let wordapiURL = "https://random-word-api.herokuapp.com/word?";
 let word = "";
-let time = 0;
 let timer = 0;
 let interval;
 let mistakes = 0;
@@ -45,13 +44,12 @@ function genWord(){
 }
 
 function reset(){   
-    time = 0;
     timer = parseInt(timerSelectElement.value);
     mistakes = 0;
     score = 0;
     clearInterval(interval)
 
-    scoreElement.textContent = score;
+    wpmElement.textContent = score;
     wordText.textContent = "...";
     userInput.value = "";
     
@@ -101,7 +99,7 @@ function checkWord(){
     }
 
     userInput.value = "";
-    scoreElement.textContent = score;
+    wpmElement.textContent = score / (parseInt(timerSelectElement.value) / 60);
     genWord();
 }
 
@@ -119,7 +117,6 @@ function closeSettings(){
 }
 
 function resetGame(){
-    time = 0;
     timer = parseInt(timerSelectElement.value);
     mistakes = 0;
     score = 0;

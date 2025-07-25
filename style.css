@@ -324,5 +324,6 @@ body{
 
 .incorrect {
     color: rgb(215, 67, 67);
+    background-color: rgba(215, 67, 67, 0.355);
 }
 
