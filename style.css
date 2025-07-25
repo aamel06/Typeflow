@@ -313,6 +313,11 @@ body{
     color: #EEEEEE;
 }
 
+.ccontainer .extra{
+    color: #596882;
+    font-size: 1.5rem;
+}
+
 .incorrect .currentChar, .currentChar{
     background-color: #3b5762;
     color: #76ABAE;
@@ -324,5 +329,6 @@ body{
 
 .incorrect {
     color: rgb(215, 67, 67);
+    background-color: rgba(215, 67, 67, 0.355);
 }
 
