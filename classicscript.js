@@ -21,7 +21,7 @@ let bookWholeText;
 
 function genParagraph(){
     let bookID = parseInt(Math.random() * (10010 - 10) + 10);
-    let bookURL = `http://gutendex.com/books/${bookID}/`;
+    let bookURL = `https://gutendex.com/books/${bookID}/`;
     let preQuote;
     fetch(bookURL)
         .then(response => response.json())
