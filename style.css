@@ -38,7 +38,6 @@ body{
     display: flex;
     width: 80%;
     margin: 0 auto;
-    filter: drop-shadow(0 0 -0.75rem #12151a);
     gap: 10%;
 }   
     
@@ -69,6 +68,8 @@ body{
 }
 
 .modes .classic:hover, .modes .quickfire:hover{
+        filter: drop-shadow(0 0 0.75rem #31363F);
+
     transform:scale(1.1);
 }
 
@@ -259,7 +260,7 @@ body{
 
 .ccontainer{
     position: absolute;
-    left: 25%;
+    left: 20%;
     margin: 0 auto;
     font-family: Outfit, sans-serif;
     background-color: #31363F;
@@ -267,7 +268,7 @@ body{
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 1rem;
-    width: 50%;
+    width: 60%;
     transition: transform 0.5s ease;
     text-align: center;
 }
@@ -278,7 +279,10 @@ body{
     border-radius: 1rem;
     padding: 15px;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    behavior: "scroll";
+    direction: "up";
 }
 
 .ccontainer #start-test, .ccontainer #stop-test{
@@ -310,12 +314,13 @@ body{
 }
 
 .ccontainer p{
+    font-size: 1.5rem;
     color: #EEEEEE;
 }
 
-.ccontainer .extra{
+.ccontainer #extra{
     color: #596882;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .incorrect .currentChar, .currentChar{
