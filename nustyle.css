@@ -1,0 +1,246 @@
+@keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+}
+
+:root{
+    --bgColour: #1a1a1a;
+    --defaultaccent: rgb(183, 183, 183);
+    --accent: var(--defaultaccent);
+    --bgAccent: #4a4a4a;
+    --bgContainer: #161616;
+    --bgh1: #1d1d1d;
+
+    --mainFont: "Sometype Mono";
+}
+
+
+
+.light{
+    --bgColour: #d6d6d6;
+    --defaultaccent: black;
+    --accent: var(--defaultaccent);
+    --bgAccent: #a7a7a7;
+    --bgContainer: #d0d0d0;
+    --bgh1: #c6c6c6;
+
+}
+
+body{
+    cursor: crosshair;
+    background-color: var(--bgColour);
+}
+
+h1,h2,h3,h4,p, button, li, select, a, input{
+    color: var(--accent);
+    font-family: var(--mainFont), sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+        text-decoration: none;
+
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+}
+
+.alphabet{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+h1{
+    background-color: var(--bgh1);
+    padding: 5px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+}
+
+h2{
+    background-color: var(--bgColour);
+    padding: 5px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+}
+
+h3{
+    padding-left: 20px;
+}
+
+textarea{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.blinker{
+    animation: blinker 1s step-end infinite;
+
+}
+
+.correct{
+    color: var(--accent);
+
+}
+
+.incorrect{
+    color: rgb(187, 66, 66); /* Incorrect Font Colour */
+
+}
+
+.currentChar{
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.finished{
+    opacity: 25%;
+}
+
+.accent{
+    color: var(--accent);
+    list-style: none;
+
+
+}
+
+.backgroundAccent{
+    color: var(--bgAccent);
+}
+
+#quote{
+    text-align: justify;
+    font-family: var(--mainFont), sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+.activestats{
+    text-align: right;
+
+}
+
+#extra{
+    color: var(--bgAccent);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.asciiWorld{
+    user-select: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.asciiBackground{
+    position: absolute;
+    user-select: none;
+    right: 0;
+    bottom: 0;
+    font-size:0.8rem;
+    z-index: -1;
+    text-align: center;
+}
+
+select{
+    background-color: transparent;
+    border: none;
+}
+
+select:focus{
+  outline: none;
+}
+
+button, a{
+    background-color: transparent;
+    border: none;
+}
+
+button:enabled:hover, a:enabled:hover{
+    cursor: crosshair;
+    border-bottom: 1px solid var(--accent);
+}
+
+button:disabled, a:disabled{
+    opacity: 50%;
+}
+
+#result{
+    background-color: var(--bgh1);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+
+
+}
+
+#screen{
+    display: flex;
+    justify-content: center;  /* centers the two blocks horizontally */
+    align-items: flex-start;  /* aligns them at the top */
+    gap: 1rem; 
+}
+
+#container{
+    background-color: var(--bgContainer);
+    border: 1px solid var(--accent);
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    border-radius: 5px;
+    width: 60%;
+
+    /* margin: 0 auto;
+    width: 60%;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    
+}
+
+.mode{
+
+    padding: 10px;
+}
+
+#settings{
+    background-color: var(--bgContainer);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    width: 30%;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    display: none;
+}
+
+#settings button{
+    text-align: right;
+}
+
+.game{
+    text-align: center;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    gap: 20px;
+    padding: 20px;
+}
+.footer a{
+    margin-left: 20px;
+}
+
+

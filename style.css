@@ -1,7 +1,26 @@
+:root{
+    --mainFont: "Fira Code";
+}
+
+@keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+}
+
 body{
-    /* background: #e0fff4; */
-    /* background: linear-gradient(180deg,rgba(224, 255, 244, 1) 1%, rgba(56, 179, 255, 1) 100%); */
-    background: #222831;
+    
+    background: #222222;
+}
+
+.caret{
+    color: #CA3E47 ;
+    animation: blinker 1s step-end infinite;
+    font-size: 1.8rem;
+}
+
+h1{
+    text-align: left;
 }
 
 .landingPage{
@@ -10,14 +29,14 @@ body{
 }
 
 .highlighted{
-    color: #7dbabd;
+    color: #CA3E47;
     font-style: italic;
 }
 
 .landingPage h1{
     color: #EEEEEE;
     margin-top: 80px;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 5rem;
     line-height: 0.1em;
     user-select: none;
@@ -25,7 +44,7 @@ body{
 
 .landingPage h2{
     color: #EEEEEE;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 1.5rem;
     user-select: none;
     font-weight: 400;
@@ -34,7 +53,7 @@ body{
 
 .modes{
     padding-top: 80px;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -43,10 +62,9 @@ body{
     
 
 .modes .classic, .modes .quickfire{
-    background-color: #31363F;
+    background-color: #313131;
     padding: 10px;
     padding-bottom: 30px;
-    border-radius: 1rem;
     width: 70%;
     margin-right: 40px;
     transition: transform 0.5s ease;
@@ -74,10 +92,9 @@ body{
 }
 
 .modes a{
-    color: #222831;
-    background-color: #76ABAE;
+    color: #CA3E47;
+    background-color: #313131;
     padding: 10px 20px;
-    border-radius: 2rem;
     text-decoration: none;
     text-align: end;
 }
@@ -96,7 +113,7 @@ body{
 .qtitle h1{
     color: #EEEEEE;
     margin-top: 80px;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 4rem;
     line-height: 0.1em;
     user-select: none;
@@ -107,11 +124,10 @@ body{
     position: absolute;
     left: 25%;
     margin: 0 auto;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     background-color: #31363F;
     padding: 10px;
     padding-bottom: 30px;
-    border-radius: 1rem;
     width: 50%;
     transition: transform 0.5s ease;
     text-align: center;
@@ -129,14 +145,13 @@ body{
 }
 
 .qcontainer input{
-    border-radius: 2rem;
     font-size: 1.5rem;
     padding: 10px 10px;
     resize: none;
     text-align: center;
     background-color: #222831;
     border-width: 0;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     color: #EEEEEE;
 }
 
@@ -150,12 +165,11 @@ body{
 }
 
 .qcontainer .gameButtons button{
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 1.2rem;
     color: #222831;
     background-color: #76ABAE;;
     padding: 5px 60px;
-    border-radius: 1rem;
     border: none;
     transition: transform 0.5s ease;
     margin-left: 5px;
@@ -172,7 +186,7 @@ body{
     background-color: #6b7d7e;
 }
 
-.qcontainer .settingsButton{
+.qcontainer .settingsButton, .ccontainer .settingsButton{
     position: absolute;
     top: 0;
     right: 0;
@@ -181,13 +195,13 @@ body{
     border: 0;
 }
 
-.qcontainer .settingsButton img{
+.qcontainer .settingsButton img, .ccontainer .settingsButton img{
     max-width: 40px;
     transition: transform 1s ease;
     background-color: #76ABAE;
 }
 
-.qcontainer .settingsButton img:hover{
+.qcontainer .settingsButton img:hover, .ccontainer .settingsButton img:hover{
     background-color: #638e90;
 
 }
@@ -203,7 +217,6 @@ body{
     top: 18%;
     text-align: center;
     display: none;
-    border-radius: 1rem;
     transition: transform 1s ease;
 
 }
@@ -231,19 +244,18 @@ body{
 
 .settings h4{
     color: #EEEEEE;
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 1.5rem;
 }
 
 .settings label, .settings select{
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 1rem;
     color: #EEEEEE;
     
 }
 
 .settings select{
-    border-radius: 0.5rem;
     border-width: 0;
     margin-left: 10px;
     background-color: #222831;
@@ -262,21 +274,19 @@ body{
     position: absolute;
     left: 20%;
     margin: 0 auto;
-    font-family: Outfit, sans-serif;
-    background-color: #31363F;
-    color: #EEEEEE;
+    font-family: var(--mainFont), sans-serif;
+    background-color: #414141;
+    color: #525252;
     padding: 10px;
     padding-bottom: 30px;
-    border-radius: 1rem;
     width: 60%;
     transition: transform 0.5s ease;
     text-align: center;
 }
 
 .ccontainer #quote{
-    color:#434d60;
-    background-color: #222831;
-    border-radius: 1rem;
+    color:#525252;
+    background-color: #313131;
     padding: 15px;
     text-align: justify;
     font-size: 2rem;
@@ -286,12 +296,11 @@ body{
 }
 
 .ccontainer #start-test, .ccontainer #stop-test{
-    font-family: Outfit, sans-serif;
+    font-family: var(--mainFont), sans-serif;
     font-size: 1.2rem;
     color: #222831;
     background-color: #76ABAE;;
     padding: 5px 40px;
-    border-radius: 1rem;
     border: none;
     transition: transform 0.5s ease;
     margin-top: 20px;
@@ -309,7 +318,8 @@ body{
     opacity: 0;
 }
 
-.ccontainer .result{
+.ccontainer .result {
+    font-size: 1.5rem;
     display: none;
 }
 
@@ -324,7 +334,7 @@ body{
 }
 
 .incorrect .currentChar, .currentChar{
-    background-color: #3b5762;
+    text-decoration: underline;
     color: #76ABAE;
 }
 
